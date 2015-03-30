@@ -1,0 +1,33 @@
+---
+title: "Chapter 1: Getting Started Using the American Community Survey"
+author: "Jim Pavlik"
+date: "March 30, 2015"
+output: html_document
+---
+
+#Introduction
+The federal government administers and maintains several data sources useful for the public mental health professional. While other datasets may be more useful in designing, executing, and evaluating the impact of a program, an essential starting point is knowing where people are, roughly how many of them there are, and getting a rough picture of their general characteristics. So, while other datasets may be more useful, the American Community Survey is well-known and heavily used. It makes good sense to begin exploring R for public mental health in an area where small efforts will have large pay-offs for professionals in a variety of settings.
+
+##The American Community Survey
+The American Community Survey (ACS) is a continuously administed survey mailed to 250,000 addresses each month (3 millions/year). It was designed to replace the decennial census "long form," which had been seeing declining response rates.  The US Census Bureau has been releasing ACS data since 2001. The largest population areas (>250,000) are updated each year. Smaller areas (>20,000) get updated with 3-year estimates, and smaller areas still, down to the block level, receive updates in 5-year estimates. Since the 2010 decennial census, the ACS has fully replaced long form data, although the Population Estimates Program remains the official source for annual population totals. 
+
+Because of the statistical pecularities of pooling multiple year sampling into one estimate, when making comparisons between areas, always compare similar intervals. For example, information on Colorado is updated each year. However, smaller communities, like Nederland (pop. < 1,500), only receive updates every 5 years. If you wanted to compare population characterstics between Nederland and Colorado overall, use the 5-year estimates for Colorado over the same period as the Nederland estimates.
+
+##Getting the Data
+As with each of the chapters in this book, we begin by setting up our project and getting our data.
+
+To set up the project, refer back to Chapter 0. For this project, my pathname is PMHR/Chapter01-ACS
+
+Finally, we want to setup our version control framework.
+
+```{r}
+setwd("~/Desktop/Book01/Chapter01 - ACS")
+```
+
+You can also embed plots, for example:
+
+```{r, echo=FALSE}
+plot(cars)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
